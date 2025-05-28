@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wtms/model/workers.dart';
 import 'package:wtms/screens/login_screen.dart';
+import 'package:wtms/screens/task_list_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   final Worker worker;
@@ -46,6 +47,17 @@ class ProfileScreen extends StatelessWidget {
             _buildProfileItem('Email', worker.email),
             _buildProfileItem('Phone', worker.phone ?? 'Not provided'),
             _buildProfileItem('Address', worker.address ?? 'Not provided'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TaskListScreen(worker: worker),
+                  ),
+                );
+              },
+              child: const Text('View My Tasks'),
+            ),
           ],
         ),
       ),
