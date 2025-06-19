@@ -1,6 +1,6 @@
 # 🛠️ Worker Task Management System (WTMS)
 
-A mobile application developed using Flutter to manage worker tasks efficiently. WTMS allows workers to register, log in, view assigned tasks, submit work completion reports, and maintain a personal profile. The app connects to a PHP-MySQL backend via HTTP.
+A mobile application developed using Flutter to manage worker tasks efficiently. WTMS allows workers to register, log in, view assigned tasks, submit work completion reports, and view personal profile.
 
 ## 📲 Key Features
 
@@ -22,4 +22,7 @@ A mobile application developed using Flutter to manage worker tasks efficiently.
 ### 👤 Profile Management
 - View personal information (name, email, phone, etc.)
 
-
+### 🧑‍💻 Author
+- Ng Zi Wei
+- STIWK2114 Mobile Programming Midterm Assignment
+- Submission Date: 30 May 2025
